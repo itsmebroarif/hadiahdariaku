@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuis Pemrograman Web Dasar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- SweetAlert2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center">Kuis Pemrograman Web Dasar</h1>
+      <p class="text-center mb-5">Menangkan hadiah berupa keyboard mechanical dengan menjawab semua pertanyaan</p>
+      <form id="quizForm">
+        <!-- Question 1 -->
+        <div class="form-group">
+          <label for="q1">1. Apa kepanjangan dari HTML?</label>
+          <select class="form-control" id="q1" name="q1">
+            <option value="">Pilih jawaban</option>
+            <option value="Hyperlink and Text Markup Language">
+              Hyperlink and Text Markup Language
+            </option>
+            <option value="Hypertext Markup Language">
+              Hypertext Markup Language
+            </option>
+            <option value="Hypertext Multiple Language">
+              Hypertext Multiple Language
+            </option>
+          </select>
+        </div>
+        <!-- Question 2 -->
+        <div class="form-group">
+          <label for="q2"
+            >2. Tag HTML mana yang digunakan untuk menyisipkan gambar?</label
+          >
+          <select class="form-control" id="q2" name="q2">
+            <option value="">Pilih jawaban</option>
+            <option value="image">image</option>
+            <option value="picture">picture</option>
+            <option value="img">img</option>
+          </select>
+        </div>
+        <!-- Question 3 -->
+        <div class="form-group">
+          <label for="q3">3. Apa singkatan dari CSS?</label>
+          <select class="form-control" id="q3" name="q3">
+            <option value="">Pilih jawaban</option>
+            <option value="Creative Style Sheets">Creative Style Sheets</option>
+            <option value="Cascading Style Sheets">
+              Cascading Style Sheets
+            </option>
+            <option value="Computer Style Sheets">Computer Style Sheets</option>
+          </select>
+        </div>
+        <!-- Question 4 -->
+        <div class="form-group">
+          <label for="q4"
+            >4. Tag HTML apa yang digunakan untuk membuat link?</label
+          >
+          <select class="form-control" id="q4" name="q4">
+            <option value="">Pilih jawaban</option>
+            <option value="link">link</option>
+            <option value="url">url</option>
+            <option value="a">a</option>
+          </select>
+        </div>
+        <!-- Question 5 -->
+        <div class="form-group">
+          <label for="q5"
+            >5. Apa fungsi dari JavaScript dalam sebuah web?</label
+          >
+          <select class="form-control" id="q5" name="q5">
+            <option value="">Pilih jawaban</option>
+            <option value="Menambahkan interaktivitas">
+              Menambahkan interaktivitas
+            </option>
+            <option value="Mengatur layout">Mengatur layout</option>
+            <option value="Menampilkan data di server">
+              Menampilkan data di server
+            </option>
+          </select>
+        </div>
+        <!-- Question 6 -->
+        <div class="form-group">
+          <label for="q6"
+            >6. Apa tag HTML yang digunakan untuk menulis teks paragraf?</label
+          >
+          <select class="form-control" id="q6" name="q6">
+            <option value="">Pilih jawaban</option>
+            <option value="text">text</option>
+            <option value="p">p</option>
+            <option value="paragraph">paragraph</option>
+          </select>
+        </div>
+        <!-- Question 7 -->
+        <div class="form-group">
+          <label for="q7">7. Apa yang dimaksud dengan responsive design?</label>
+          <select class="form-control" id="q7" name="q7">
+            <option value="">Pilih jawaban</option>
+            <option value="Desain yang hanya cocok untuk perangkat mobile">
+                Desain yang hanya cocok untuk perangkat mobile
+            </option>
+            <option
+              value="Desain yang menyesuaikan tampilan dengan ukuran layar"
+            >
+              Desain yang menyesuaikan tampilan dengan ukuran layar
+            </option>
+            <option value="Desain yang hanya dapat digunakan pada desktop">
+              Desain yang hanya dapat digunakan pada desktop
+            </option>
+          </select>
+        </div>
+        <!-- Question 8 -->
+        <div class="form-group">
+          <label for="q8"
+            >8. Apa yang dilakukan tag <code>&lt;head&gt;</code> dalam
+            HTML?</label
+          >
+          <select class="form-control" id="q8" name="q8">
+            <option value="">Pilih jawaban</option>
+            <option value="Menampung informasi meta dan link ke stylesheet">
+              Menampung informasi meta dan link ke stylesheet
+            </option>
+            <option value="Menambahkan script JavaScript">
+              Menambahkan script JavaScript
+            </option>
+            <option value="Menampilkan konten utama">
+              Menampilkan konten utama
+            </option>
+          </select>
+        </div>
+        <!-- Question 9 -->
+        <div class="form-group">
+          <label for="q9"
+            >9. Bagaimana cara menambahkan komentar di JavaScript?</label
+          >
+          <select class="form-control" id="q9" name="q9">
+            <option value="">Pilih jawaban</option>
+            <option value="/* komentar */">/* komentar */</option>
+            <option value="// komentar">// komentar</option>
+            <option value="<-- komentar -->"><-- komentar --></option>
+          </select>
+        </div>
+        <!-- Question 10 -->
+        <div class="form-group">
+          <label for="q10">10. Apa yang dimaksud dengan DOM?</label>
+          <select class="form-control" id="q10" name="q10">
+            <option value="">Pilih jawaban</option>
+            <option value="Document Object Model">Document Object Model</option>
+            <option value="Document Oriented Model">
+              Document Oriented Model
+            </option>
+            <option value="Dynamic Object Model">Dynamic Object Model</option>
+          </select>
+        </div>
+        <button type="submit" class="btn confirm btn-primary">Kumpulkan Berkas Jawaban</button>
+      </form>
+    </div>
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
